@@ -149,3 +149,16 @@ if (modal && modalBody) {
         }
     });
 }
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+const overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+    burger.classList.toggle("active");
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+}
+
+burger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
