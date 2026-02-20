@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Мой Блог</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+<header class="header">
+    <div class="logo">MySite</div>
+
+    <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="login.html">Войти</a>
+    </nav>
+
+    <a href="login.html" class="login-btn">Войти</a>
+
+    <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<section class="blog">
+ <div class="section-header">
+                <h1 class="section-title">🎥 Мои блог</h1>
+                <p class="section-subtitle">Каждый день — новый опыт и пара косяков</p>
+            </div>
+
+    <div class="blog-grid">
+
+        <div class="blog-card">
+            <h3>Как я начал путь</h3>
+            <p>Почему выбрал IT? С чего начал HTML, CSS и первые сложности..</p>
+            <button class="read-btn" data-article="article1">Читать</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Что понял за месяц?</h3>
+            <p>Ошибки — часть обучения.</p>
+            <button class="read-btn" data-article="article2">Читать</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Flexbox</h3>
+            <p>Что такое display: flex?</p>
+            <button class="read-btn" data-article="article3">Читать</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Glassmorphism</h3>
+            <p>Разбор ошибок и ошибки, которые допустил.</p>
+            <button class="read-btn" data-article="article4">Читать</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Первый сайт</h3>
+            <p>Структура проекта</p>
+            <button class="read-btn" data-article="article5">Читать</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Ошибки начинающего</h3>
+            <p>Неправильная структура проекта</p>
+            <button class="read-btn" data-article="article6">Читать</button>
+        </div>
+
+    </div>
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Контакты</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+<header class="header">
+    <div class="logo">MySite</div>
+
+    <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="login.html">Войти</a>
+    </nav>
+
+    <a href="login.html" class="login-btn">Войти</a>
+
+    <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<section class="contacts">
+  <div class="contacts-wrapper">
+
+    <!-- Левая колонка -->
+    <div class="contacts-info">
+      <h1>Связаться со мной</h1>
+      <p class="subtitle">
+        Есть идея, предложение или просто хочешь пообщаться?
+        Напиши мне 👇
+      </p>
+
+      <div class="info-block">
+        <p>📧 ivandorofeev251@gmail.com</p>
+        <p>TG: @ivandorofeev04</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://t.me/ivandorofeev04">Telegram</a> <!--
+        <a href="#">GitHub</a>
+        <a href="#">VK</a>-->
+      </div>
+    </div>
+
+    <!-- Правая колонка -->
+    <form class="contact-form">
+      <h2>Написать сообщение</h2>
+
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Ваш Email" required>
+      <textarea placeholder="Сообщение" rows="5" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+
+  </div>
+</section>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
